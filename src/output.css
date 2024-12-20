@@ -667,6 +667,10 @@ video {
   align-items: flex-end;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -691,8 +695,23 @@ video {
   overflow: hidden;
 }
 
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.divide-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(2px * var(--tw-divide-x-reverse));
+  border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
+
 .text-ellipsis {
   text-overflow: ellipsis;
+
 }
 
 .text-balance {
@@ -705,6 +724,11 @@ video {
 
 .rounded-2xl {
   border-radius: 1rem;
+}
+
+.bg-verde-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(145 238 119 / var(--tw-bg-opacity, 1));
 }
 
 .rounded-xl {
@@ -798,6 +822,23 @@ video {
   padding-bottom: 2rem;
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+  
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -855,6 +896,18 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:underline-offset-8:hover {
+  text-underline-offset: 8px;
+}
+
+@media (min-width: 768px) {
+  .md\:justify-start {
+    justify-content: flex-start;
 
 .underline {
   text-decoration-line: underline;
